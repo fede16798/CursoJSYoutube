@@ -1,0 +1,31 @@
+Problema A:
+- Mostrarle las particularidades de los 3 celulares
+- Cada uno debe tener:
+	- color
+	- peso
+	- resolucion de pantalla
+	- camara
+	- memoria ram
+- Deben poder:
+	- prender
+	- reiniciar
+	- tomar fotos
+	- grabar
+
+Problema B:
+- Celulares de alta gama, que hacen lo mismo que los otros y además:
+	- grabar en camara super lenta
+	- reconocimiento facial
+	- tienen una camara extra
+
+Problema C:
+- crear un sistema que ayude a decidir que app descargar
+- las Aplicaciones deben contener:
+	- cantidad de descargas
+	- puntuación
+	- peso
+- se deben poder:
+	- instalar
+	- abrir
+	- cerrar
+	- desinstalar.
