@@ -1,23 +1,73 @@
-let materias = {
-    fisica: ["fisica",90,6,4],
-    matematica: ["matematica", 79,8,2],
-    logica: ["logica",96,8,4],
-    programacion: ["programacion",50,9,4],
-    baseDeDatos: ["base de datos", 100,10,4]
+//let parrafo = document.getElementById("parrafo");
+//let parrafo = document.getElementsByTagName("p");
+//let parrafo = document.querySelector("#parrafo");
+//let parrafo = document.querySelectorAll(".parrafo");
+
+//const rangoEtario = document.querySelector(".rangoEtario");
+/*document.write(`<br> ${rangoEtario.getAttribute("type")} <br>`);
+rangoEtario.setAttribute("type", "text");
+document.write(`<br> ${rangoEtario.getAttribute("type")} <br>`);
+*/
+//rangoEtario.removeAttribute("type");
+
+//const titulo = document.querySelector(".titulo");
+//titulo.setAttribute("contentEditable", "true");
+//titulo.setAttribute("dir", "rtl");
+//titulo.setAttribute("hidden", "true");
+//titulo.setAttribute("tabindex", "0");
+//titulo.setAttribute("title", "prueba");
+
+/*-----------------------------------INPUT---------------------------------------------------------------*/
+/*const input = document.querySelector(".input-normal");
+document.write(input.className);
+
+input.type = "text";*/
+/*--------------------------------------STYLE------------------------------------------------------------*/
+/*
+const titulo = document.querySelector(".titulo");
+titulo.style.color = "blue";
+titulo.style.backgroundColor = "red";
+titulo.classList.add("grande");
+let valor = titulo.classList.item(1);
+let valor2 = titulo.classList.contains("titulo");
+titulo.classList.toggle("titulo");
+titulo.classList.replace("grande", "chico");*/
+/*--------------------------------------Elementos------------------------------------------------------------*/
+/*let titulo = document.querySelector(".titulo");
+let resultado = titulo.innerText;
+document.write(resultado);*/
+/*--------------------------------------Creación de Elementos------------------------------------------------------------*/
+/*
+const fragmento = document.createDocumentFragment();
+for (let i = 0; i < 20; i++) {
+    const item = document.createElement("LI");
+    item.innerHTML = "Este es un item de la lista";
+    fragmento.appendChild(item);
 }
-
-const aprobo = () => {
-    for (materia in materias) {
-        let asistencias = materias[materia][1];
-        let promedio = materias[materia][2];
-        let trabajos = materias[materia][3];
-
-        if (asistencias > 75 && promedio > 6 && trabajos > 2) {
-            console.log(`%c La materia ${materias[materia][0]} está aprobada`, "color: green");
-        } else {
-            console.log(`%c La materia ${materias[materia][0]} está desaprobada`, "color: red");
-        }
-    }
+contendor.appendChild(fragmento);*/
+/*--------------------------------------obtencion de hijo------------------------------------------------------------*/
+/*const primerHijo2 = contendor.firstChild;
+const primerHijo = contendor.firstElementChild;
+const todosLosNodos2 = contendor.childNodes;
+const todosLosNodos = contendor.children;
+for (const hijo of todosLosNodos) {
+    console.log(hijo);
 }
+console.log(todosLosNodos);*/
+/*--------------------------------------metodos de hijo------------------------------------------------------------*/
+const contendor = document.querySelector(".contenedor");
 
-aprobo();
+const parrafo = document.createElement("P");
+parrafo.innerHTML = "parrafo";
+const h2Nuevo = document.createElement("H2");
+h2Nuevo.innerHTML = "titulo nuevo";
+const h2Viejo = document.querySelector(".h2")
+//contendor.replaceChild(h2Nuevo,h2Viejo);
+//contendor.removeChild(h2Viejo);
+
+let respuesta = h2Viejo.hasChildNodes();
+
+respuesta = h2Viejo.parentElement;
+console.log(respuesta);
+let h4 = document.querySelector("h4");
+console.log(h4.nextElementSibling);
