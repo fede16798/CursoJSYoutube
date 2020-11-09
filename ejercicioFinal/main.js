@@ -1,5 +1,10 @@
-const contenedor = document.querySelector(".flex-container");
+/*Hay 20 modelos de llaves.
+- Indicarle las 20 llaves posibles con sus 4 imagenes y cofla
+debe seleccionar una llave.
+- una vez seleccionada enviar los datos al servidor y que otro programador
+se encargue*/
 
+const contenedor = document.querySelector(".flex-container");
 
 function crearLlave(nombre, modelo, precio){
     img = "<img class='llave-img' src='llave.png'>"
